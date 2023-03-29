@@ -20,3 +20,12 @@ let listaSpesa = [
 ]
 
 console.log(listaSpesa)
+
+let i = 0;
+
+while(i < listaSpesa.length){
+    // codice da eseguire
+    console.log(listaSpesa[i])
+    // istruzioni per terminare il ciclo
+    i++;
+}
