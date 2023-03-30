@@ -19,13 +19,20 @@ let listaSpesa = [
     'pasta'
 ]
 
-console.log(listaSpesa)
+
+const listaContainer = document.getElementById('lista-spesa')
 
 let i = 0;
 
 while(i < listaSpesa.length){
     // codice da eseguire
+    const item = listaSpesa[i]
+
+    const listItem = document.createElement('li')
+    listItem.innerText = item
+    listaContainer.append(listItem)
     console.log(listaSpesa[i])
+
     // istruzioni per terminare il ciclo
     i++;
 }
